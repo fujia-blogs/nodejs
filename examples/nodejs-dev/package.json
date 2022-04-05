@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "concurrently \"node ./demos/async.js\" \"node ./demos/client-1.js\" \"node ./demos/client-2.js\" ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.1.0"
+  },
+  "dependencies": {
+    "request-promise": "^4.2.6"
+  }
+}
