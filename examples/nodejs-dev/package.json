@@ -6,6 +6,7 @@
   "scripts": {
     "serve": "concurrently \"node ./demos/async.js\" \"node ./demos/client-1.js\" \"node ./demos/client-2.js\" ",
     "restful": "concurrently \"node ./src/express/index.js\" \"node ./src/koa/index.js\"",
+    "cluster": "node ./src/cluster/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
