@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "concurrently \"node ./demos/async.js\" \"node ./demos/client-1.js\" \"node ./demos/client-2.js\" ",
+    "restful": "concurrently \"node ./src/express/index.js\" \"node ./src/koa/index.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +15,8 @@
     "concurrently": "^7.1.0"
   },
   "dependencies": {
+    "express": "^4.17.3",
+    "koa": "^2.13.4",
     "request-promise": "^4.2.6"
   }
 }
